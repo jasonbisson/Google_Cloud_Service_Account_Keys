@@ -44,7 +44,7 @@ delete_service_account.sh *environment*
 
 validate_service_account_key.sh *environment*
 
-##External Documentation
+## External Documentation
 
 [Understanding Service Accounts](https://cloud.google.com/iam/docs/understanding-service-accounts)
 
