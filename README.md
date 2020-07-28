@@ -14,10 +14,12 @@ https://github.com/GoogleCloudPlatform/python-docs-samples.git
 ## Usage
 
 ### Create a bucket to store the Service account keys with default encrytion
-export project_id=$(gcloud config list --format 'value(core.project)')
-export bucket=$project_id-userkeys
-gsutil mb gs://$bucket
-gsutil versioning set on gs://$bucket
+```
+$ export project_id=$(gcloud config list --format 'value(core.project)')
+$ export bucket=$project_id-userkeys
+$ gsutil mb gs://$bucket
+$ gsutil versioning set on gs://$bucket
+```
 
 ### Creates a KMS Symmetric Key to provide file level encryption for the Service Account Key:
 ./create_symmetric_key.sh *environment* 
